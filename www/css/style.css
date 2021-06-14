@@ -1,0 +1,26 @@
+body {
+  margin: 15px;
+}
+
+.logo  img{
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 150px
+}
+
+.goal{
+  font-size: 20px;
+  min-width: 5em;
+  padding-left:20px;
+  padding-right: 20px;
+  max-height: 1.5em;
+  background-color: #ADCA80;
+  margin-top: 10px;
+  margin-right: 2em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 23px -6px rgba(0,0,0,0.6), 0px 0px 21px -8px rgba(0,0,0,0.5), 0px 0px 49px -30px rgba(0,0,0,0.9);
+}
+.container{
+        display: flex;
+}
+

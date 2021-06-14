@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+   
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+	    <img src="img/giorno.jpg" alt="ジョルノ">
+    </div>
+
+    <div class="goal"
+      <p>今日の目標</p>
+    </div>
+  </div>
+
+<p>ここからはJavaScript</p>
+ <script>
+      var date = new Date();
+      var month = date.getMonth() + 1;
+      var day = date.getDate();
+      var today = month + "." + day ;
+      document.writeln(today);
+      var  weekday = date.getDay();
+      if (weekday == 0) {
+          document.writeln("日");
+        } else if (weekday == 1) {
+          document.writeln("月");
+        } else if (weekday == 2) {
+           document.writeln("火");
+        } else if (weekday == 3) {
+           document.writeln("水");
+        } else if (weekday == 4) {
+           document.writeln("木");
+        } else if (weekday == 5) {
+           document.writeln("金");
+        } else if (weekday == 6) {
+           document.writeln("土");
+        } 
+    </script>
+
+</body>
+</html>
