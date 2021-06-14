@@ -43,7 +43,11 @@
            document.writeln("金");
         } else if (weekday == 6) {
            document.writeln("土");
-        } 
+        } ;
+        window.onload = function() {
+        localStorage.setItem('hoge', 'fuga');
+        console.log(localStorage.getItem('hoge'));
+      }
     </script>
 
 </body>
