@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+</head>
+<body>
+    <canvas id="stage"></canvas>
+    <script>
+        var ctx = document.getElementById("stage").getContext('2d');
+var ChartDemo = new Chart(ctx, {
+   type: 'line',
+   data: {
+      labels: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+      datasets: [
+      {
+         label: "吸った本数",
+         borderColor: 'rgb(0, 0, 0)',
+         data: [20, 26, 12, 43, 33, 21, 29],
+      },
+      ]
+   },
+   options: {
+      responsive: true,
+   }
+});
+      </script>
+    <div class='btnM'>
+        <a href='../index.html'>ホーム</a>
+    </div>
+</body>
+</html>
